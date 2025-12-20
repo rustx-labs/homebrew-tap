@@ -20,8 +20,8 @@ class EyeSentry < Formula
     prefix.install app_path
   end
 
-  postinstall do
-    app_path = "#{prefix}/eye-sentry.app"
+  def post_install
+    app_path = prefix/"eye-sentry.app"
     system_command "/usr/bin/xattr",
       args: ["-dr", "com.apple.quarantine", app_path]
   end
