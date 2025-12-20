@@ -13,7 +13,7 @@ class EyeSentry < Formula
     sha256 "d9b01cb67db72e6f713a1dd94590d61119560db217590492c716e1755f6a84a8"
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   def install
     app_path = "eye-sentry.app"
