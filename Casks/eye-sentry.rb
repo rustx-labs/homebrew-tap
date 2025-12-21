@@ -16,9 +16,7 @@ cask "eye-sentry" do
   preflight do
     app_path = appdir/"eye-sentry.app"
     if app_path.exist?
-      system_command "/bin/rm",
-        args: ["-rf", app_path],
-        sudo: !app_path.writable?
+      opoo "Existing app found at #{app_path}. Please remove it manually before installing."
     end
   end
 
