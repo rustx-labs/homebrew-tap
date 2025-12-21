@@ -26,6 +26,11 @@ cask "eye-sentry" do
   end
 
   postflight do
+    app_path = appdir/"eye-sentry.app"
+    if app_path.exist?
+      system_command "/usr/bin/xattr",
+        args: ["-d", "com.apple.quarantine", app_path.to_s]
+    end
     system_command "/usr/bin/open",
       args: ["-a", "eye-sentry"]
   end
