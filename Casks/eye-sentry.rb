@@ -21,7 +21,7 @@ cask "eye-sentry" do
     downloaded_path = cask.download
     if downloaded_path&.exist?
       system_command "/usr/bin/xattr",
-        args: ["-d", "com.apple.quarantine", downloaded_path.to_s]
+        args: ["-cr", "com.apple.quarantine", downloaded_path.to_s]
     end
   end
 
@@ -29,7 +29,7 @@ cask "eye-sentry" do
     app_path = appdir/"eye-sentry.app"
     if app_path.exist?
       system_command "/usr/bin/xattr",
-        args: ["-d", "com.apple.quarantine", app_path.to_s]
+        args: ["-cr", "com.apple.quarantine", app_path.to_s]
     end
     system_command "/usr/bin/open",
       args: ["-a", "eye-sentry"]
