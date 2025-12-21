@@ -18,11 +18,14 @@ cask "eye-sentry" do
     if app_path.exist?
       opoo "Existing app found at #{app_path}. Please remove it manually before installing."
     end
+    downloaded_path = cask.download
+    if downloaded_path&.exist?
+      system_command "/usr/bin/xattr",
+        args: ["-d", "com.apple.quarantine", downloaded_path.to_s]
+    end
   end
 
   postflight do
-    system_command "/usr/bin/xattr",
-      args: ["-dr", "com.apple.quarantine", "#{appdir}/eye-sentry.app"]
     system_command "/usr/bin/open",
       args: ["-a", "eye-sentry"]
   end
