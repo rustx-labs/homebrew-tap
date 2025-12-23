@@ -16,7 +16,10 @@ cask "eye-sentry" do
   preflight do
     app_path = appdir/"eye-sentry.app"
     if app_path.exist?
-      opoo "Existing app found at #{app_path}. Please remove it manually before installing."
+      opoo "An existing version of Eye Sentry was found. It will be removed before installing the new version."
+      system_command "/bin/rm",
+        args: ["-rf", app_path],
+        sudo: !app_path.writable?
     end
     downloaded_path = cask.download
     if downloaded_path&.exist?
