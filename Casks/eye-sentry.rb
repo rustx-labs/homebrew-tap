@@ -21,6 +21,6 @@ cask "eye-sentry" do
     end
     
     system_command "/usr/bin/open",
-      args: ["-a", "eye-sentry"]
+      args: ["-a", app_path.to_s]
   end
 end
