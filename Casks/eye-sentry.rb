@@ -13,27 +13,13 @@ cask "eye-sentry" do
 
   app "eye-sentry.app"
 
-  preflight do
-    app_path = appdir/"eye-sentry.app"
-    if app_path.exist?
-      opoo "An existing version of Eye Sentry was found. It will be removed before installing the new version."
-      system_command "/bin/rm",
-        args: ["-rf", app_path],
-        sudo: !app_path.writable?
-    end
-    downloaded_path = cask.download
-    if downloaded_path&.exist?
-      system_command "/usr/bin/xattr",
-        args: ["-cr", downloaded_path.to_s]
-    end
-  end
-
   postflight do
     app_path = appdir/"eye-sentry.app"
     if app_path.exist?
       system_command "/usr/bin/xattr",
         args: ["-cr", app_path.to_s]
     end
+    
     system_command "/usr/bin/open",
       args: ["-a", "eye-sentry"]
   end
