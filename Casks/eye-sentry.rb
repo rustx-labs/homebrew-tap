@@ -1,7 +1,7 @@
 cask "eye-sentry" do
-  version "0.1.8"
-  sha256 arm: "2dda977d2d8190f368717617c2952cb23ab315dc505c113e412f9cf5b3591395",
-         intel: "10940d0ebddccc32a0e852fe6a67603a0329e2d18b335f04896631bdfbcca889"
+  version "0.1.9"
+  sha256 arm: "0229f0ae6186061c70deec4539ca1c1bf1cffdadb031006ba29a017d3eb6ad68",
+         intel: "abaf22bc8ed32061d76848c83d37762020aa5bd3f98e37db00d5da0beb62c309"
 
   arch arm: "aarch64",
        intel: "x64"
