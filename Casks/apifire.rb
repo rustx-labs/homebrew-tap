@@ -6,7 +6,7 @@ cask "apifire" do
   arch arm: "aarch64",
        intel: "x86_64"
 
-  url "https://msjiarczdjxuxc5t.public.blob.vercel-storage.com/releases/v#{version}/apifire-v#{version}_#{arch}-apple-darwin.tar.gz"
+  url "https://msjiarczdjxuxc5t.public.blob.vercel-storage.com/releases/v#{version}/apifire-v#{version}-#{arch}-apple-darwin.tar.gz"
   name "ApiFire"
   desc "API testing tool for macOS"
   homepage "https://apifire.vercel.app/"
