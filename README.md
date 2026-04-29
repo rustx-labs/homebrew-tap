@@ -48,18 +48,40 @@ brew tap rustx-labs/tap
 brew install --cask apifire
 ```
 
+### Sky Monitor
+
+A macOS sky monitoring application.
+
+- Homebrew cask: `sky-monitor`
+- Install target: `/Applications/sky-monitor.app`
+- Best for: users who want sky monitoring as a native macOS app
+
+Install with:
+
+```bash
+brew install --cask rustx-labs/tap/sky-monitor
+```
+
+Or after tapping the repository:
+
+```bash
+brew tap rustx-labs/tap
+brew install --cask sky-monitor
+```
+
 ## Brewfile Example
 
 ```ruby
 tap "rustx-labs/tap"
 cask "eye-sentry"
 cask "apifire"
+cask "sky-monitor"
 ```
 
 ## Notes
 
-- If `/Applications/eye-sentry.app` already exists, the installer will replace it.
-- `eye-sentry` clears extended attributes during installation and launches automatically after install.
+- If `/Applications/eye-sentry.app` or `/Applications/sky-monitor.app` already exists, the installer will replace it.
+- `eye-sentry` and `sky-monitor` clear extended attributes during installation and launch automatically after install.
 - `apifire` installs a CLI binary and clears extended attributes during installation.
 
 ## Documentation
