@@ -1,7 +1,7 @@
 cask "sky-monitor" do
   version "0.1.0"
-  sha256 arm: "394405f07ed10dee382b1032f6402d6722635ef25f5dde57277a2ee5eaf14951",
-         intel: "d8622ad191ad9611b31bb3e97f2b88cffbc29da042930bc3de795b1c843fe46c"
+  sha256 arm: "0d8b29f962a821dbda92d8ad1914c3c647cefcad13fea1a7e669388ac8f0fabc",
+         intel: "b83807dd19ab91297548615d3d67033e24537f6aceb87d98258fa12f76030632"
 
   arch arm: "aarch64-apple-darwin",
        intel: "x86_64-apple-darwin"
