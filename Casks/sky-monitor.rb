@@ -1,12 +1,12 @@
 cask "sky-monitor" do
   version "0.1.0"
-  sha256 arm: "0d8b29f962a821dbda92d8ad1914c3c647cefcad13fea1a7e669388ac8f0fabc",
-         intel: "b83807dd19ab91297548615d3d67033e24537f6aceb87d98258fa12f76030632"
+  sha256 arm: "9678b95fe62d852c546326ade31e32e114ef903f8ee12176843a8a3f09ed747f",
+         intel: "1cedf31fb45e0149d8cecd9cc7cc5db9f287b429b4f81bf3b2243a6653426bfd"
 
   arch arm: "aarch64-apple-darwin",
        intel: "x86_64-apple-darwin"
 
-  url "https://i3qqupmkg6cwhlzl.public.blob.vercel-storage.com/releases/v#{version}/sky-monitor-v#{version}-#{arch}.dmg"
+  url "https://rustx-labs.github.io/releases/sky-monitor/sky-monitor-v#{version}-#{arch}.dmg"
   name "Sky Monitor"
   desc "macOS sky monitoring application"
   homepage "https://sky-monitor.vercel.app/"
