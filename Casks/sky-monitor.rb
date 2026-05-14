@@ -8,7 +8,7 @@ cask "sky-monitor" do
 
   url "https://rustx-labs.github.io/releases/sky-monitor/sky-monitor-v#{version}-#{arch}.dmg"
   name "Sky Monitor"
-  desc "macOS sky monitoring application"
+  desc "Lightweight macOS menu-bar system monitor with real-time metrics"
   homepage "https://rustx-labs.github.io/"
 
   app "sky-monitor.app"
