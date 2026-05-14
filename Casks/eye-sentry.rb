@@ -1,15 +1,15 @@
 cask "eye-sentry" do
-  version "0.1.10"
-  sha256 arm: "34f739b035425d4dea22b70a82a955c50bc557a30771ffc4d542ad5f63b806ea",
-         intel: "08f18f7f3d60b247af311ad073d715428f2375049c4b93e90f7f337a7b88ca65"
+  version "0.1.11"
+  sha256 arm: "7bc8d786d7c331f53c5c9ea54cff6a05f575aa5953062ee60a34e05accd6ed85",
+         intel: "ce9b66e3273c4194c677813769a20d0ac76d65f992d93d7ce0b991e6c7da8b2f"
 
-  arch arm: "aarch64",
-       intel: "x64"
+  arch arm: "aarch64-apple-darwin",
+       intel: "x86_64-apple-darwin"
 
-  url "https://eye-sentry.netlify.app/downloads/eye-sentry_#{version}_#{arch}.dmg"
+  url "https://rustx-labs.github.io/releases/eye-sentry/eye-sentry-v#{version}-#{arch}.dmg"
   name "Eye Sentry"
   desc "macOS eye care and focus assistant"
-  homepage "https://eye-sentry.netlify.app/"
+  homepage "https://eye-sentry.vercel.app/"
 
   app "eye-sentry.app"
 
