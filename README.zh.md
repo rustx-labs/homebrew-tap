@@ -106,6 +106,21 @@ brew install --cask novadb
 </tr>
 </table>
 
+## 升级
+
+更新 Tap 并升级所有已安装的 Cask：
+
+```bash
+brew update
+brew upgrade --cask
+```
+
+或单独升级某个应用：
+
+```bash
+brew upgrade --cask eye-sentry
+```
+
 ## Brewfile 示例
 
 配置新 Mac？把以下内容写入你的 `Brewfile`，然后运行 `brew bundle`：
@@ -117,6 +132,12 @@ cask "apifire"
 cask "sky-monitor"
 cask "novadb"
 ```
+
+## 系统要求
+
+- **macOS**：11 Big Sur 或更高版本
+- **架构**：Apple Silicon (ARM64) 或 Intel (x86_64)
+- **Homebrew**：4.0 或更高版本（[安装指南](https://docs.brew.sh/Installation)）
 
 ## 注意事项
 

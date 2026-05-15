@@ -106,6 +106,21 @@ The next-generation AI-native database client. NovaDB pairs an intelligent agent
 </tr>
 </table>
 
+## Upgrade
+
+Update the tap and upgrade all installed casks:
+
+```bash
+brew update
+brew upgrade --cask
+```
+
+Or upgrade a specific app:
+
+```bash
+brew upgrade --cask eye-sentry
+```
+
 ## Brewfile Example
 
 Managing a new Mac? Drop this into your `Brewfile` and run `brew bundle`:
@@ -117,6 +132,12 @@ cask "apifire"
 cask "sky-monitor"
 cask "novadb"
 ```
+
+## Requirements
+
+- **macOS**: 11 Big Sur or later
+- **Architecture**: Apple Silicon (ARM64) or Intel (x86_64)
+- **Homebrew**: 4.0 or later ([install guide](https://docs.brew.sh/Installation))
 
 ## Notes
 
