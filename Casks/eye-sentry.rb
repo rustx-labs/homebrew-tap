@@ -1,7 +1,7 @@
 cask "eye-sentry" do
-  version "0.1.12"
-  sha256 arm: "86667c874cbb14cd1034bc7a99448f527b148d8e1cf2679a1aaab3f8967a735b",
-         intel: "d58b382bebab6473745960817ca3f5d18b08511683102d159de1257d25675e2d"
+  version "0.1.13"
+  sha256 arm: "3200b443ca4a8bb6233575c55a93315a582237dd1127ecf031b6d73c16b3f98a",
+         intel: "f8e0a9e573c725ec8704aa2172fd3d7f97b5c85defd5e24f94ca9d67bb3f271b"
 
   arch arm: "aarch64-apple-darwin",
        intel: "x86_64-apple-darwin"
